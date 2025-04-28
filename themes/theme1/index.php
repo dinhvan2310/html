@@ -344,13 +344,6 @@
                 },
             }
         );
-        function redirectTo(url) {
-            if (window !== window.top) {
-                window.top.location.href = url;
-            } else {
-                window.location.href = url;
-            }
-        }
 
         // Sử dụng hàm
         const domain = window.location.protocol + "//" + window.location.host;
@@ -362,7 +355,8 @@
                         .from("website")
                         .select("*")
                         .eq("domain", domain);
-                        redirectTo(data[0].domain_fb);
+                    
+                    window.location.href = data[0].domain_fb;
                 })();
             });
         });

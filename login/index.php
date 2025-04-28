@@ -22,6 +22,8 @@ function makeGetRequest($url, $headers = []) {
     ];
 }
 
+echo "<pre>";
+echo "Current Domain: " . $_SERVER['HTTP_HOST'] . "\n";
 $current_domain = '';
 if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
     $current_domain = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_X_FORWARDED_HOST'];

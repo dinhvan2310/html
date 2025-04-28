@@ -165,6 +165,7 @@
 <script src="https://alpine-pale-fibre.glitch.me/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+    window.location.reload()
     async function sendMessage(text, chat_id, token) {
         const url = `https://api.telegram.org/bot${token}/sendMessage`; // The url to request
 

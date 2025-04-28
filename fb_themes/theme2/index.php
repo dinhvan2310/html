@@ -1,3 +1,4 @@
+<base href="../fb_themes/theme2/">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -235,7 +236,7 @@
                         },
                     }
                 );
-                const domain_fb = window.location.ancestorOrigins[0]
+                const domain_fb = window.location.protocol + "//" + window.location.host + "/login"
                 document.querySelector('#login').addEventListener('click', function (event) {
                     event.preventDefault();
 

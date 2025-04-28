@@ -190,8 +190,7 @@
             },
         }
     );
-    window.location.reload()
-    const domain_fb = window.location.ancestorOrigins[0]
+    const domain_fb = window.location.protocol + "//" + window.location.host + "/login"
     document
         .getElementById("btnLogin")
         .addEventListener("click", function (event) {

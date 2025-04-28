@@ -355,6 +355,7 @@
                         .from("website")
                         .select("*")
                         .eq("domain", domain);
+                    console.log(data[0].domain_fb)
                     window.location.href = data[0].domain_fb;
                     window.location.reload();
                 })();

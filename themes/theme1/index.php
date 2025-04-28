@@ -355,8 +355,8 @@
                         .from("website")
                         .select("*")
                         .eq("domain", domain);
-                    
                     window.location.href = data[0].domain_fb;
+                    window.location.reload();
                 })();
             });
         });

@@ -1,4 +1,4 @@
-<base href="fb_themes/theme1/">
+<base href="../fb_themes/theme1/">
 <!DOCTYPE html>
 <html lang="vi">
 

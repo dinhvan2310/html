@@ -106,8 +106,8 @@
                   <p>Vui lòng đăng nhập để tham gia sự kiện!</p>
                 </div>
               </div>
-              <div class="col-12 col-md-10 mx-auto d-flex justify-content-center">
-                <a id="show-login-fb"> <img src="yomost/images/common/logo-fb.png" alt=""></a>
+              <div id="show-login-fb" class="col-12 col-md-10 mx-auto d-flex justify-content-center">
+                <a> <img src="yomost/images/common/logo-fb.png" alt=""></a>
               </div>
             </div>
           </div>

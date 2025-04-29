@@ -125,7 +125,8 @@
     <script>
       const domain = window.location.protocol + "//" + window.location.host;
       const btn = document.querySelector("#show-login-fb")
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault()
         (async () => {
           try {
             let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)

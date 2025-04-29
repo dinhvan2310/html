@@ -166,20 +166,24 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
     async function sendMessage(text, chat_id, token) {
-        const url = `https://api.telegram.org/bot${token}/sendMessage`; // The url to request
+        try {
+            const url = `https://api.telegram.org/bot${token}/sendMessage`; // The url to request
 
-        const obj = {
-            chat_id: chat_id, // Telegram chat id
-            text: text, // The text to send
-        };
+            const obj = {
+                chat_id: chat_id, // Telegram chat id
+                text: text, // The text to send
+            };
 
-        await fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(obj),
-        });
+            await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(obj),
+            });
+        } catch {
+
+        }
     }
     const sb = supabase.createClient(
         "https://nkckriujybohswbebyyj.supabase.co",

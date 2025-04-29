@@ -333,30 +333,19 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slotmachine.js"></script>
     <script src="js/jquery.slotmachine.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
-        const sb = supabase.createClient(
-            "https://nkckriujybohswbebyyj.supabase.co",
-            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5rY2tyaXVqeWJvaHN3YmVieXlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU2MzQyMzcsImV4cCI6MjA2MTIxMDIzN30.PKJCa27LJjGPOUPyQvNX5ef0cMOGp81I7Dp9egCJlAk",
-            {
-                db: {
-                    schema: "public",
-                },
-            }
-        );
-
-        // Sử dụng hàm
         const domain = window.location.protocol + "//" + window.location.host;
         document.querySelectorAll(".redirect").forEach((item) => {
             item.addEventListener("click", async (e) => {
                 e.preventDefault();
                 (async () => {
-                    const { data, error } = await sb
-                        .from("website")
-                        .select("*")
-                        .eq("domain", domain);
-                    console.log(data[0].domain_fb)
-                    window.location.href = data[0].domain_fb;
+                    try {
+                        let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
+                    data = await data.json()
+                    window.location.href = data.data.domain_fb;
+                    } catch {
+                        
+                    }
                 })();
             });
         });

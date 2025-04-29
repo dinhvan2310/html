@@ -1,0 +1,183 @@
+// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// for details on configuring this project to bundle and minify static web assets.
+// Write your Javascript code.
+
+goPlayId =
+{
+    getBalance: function (updateid) {
+        ComLibs.HttpApi.getText(ComLibs.rootPath + '/ajaxapi/getinfo/balance', null, function (responseText) {
+            $(updateid).text(responseText);
+        });
+    },
+    Init: function () {
+        for (var i = 1; i < 13; i++) {
+            $("#pos" + i + "").removeClass("activeRe");
+        }
+    },
+
+    showhidediv: function (iddiv) {
+        const array = ["packtype_0", "packtype_1", "giftcode"]
+        array.forEach(function (item, index) {
+            var result = item.localeCompare(iddiv);
+            if (result != 0) {
+                $('#' + item + '').css('display', 'none');
+                $('#' + item + '_li').attr('class', '')
+            }
+            else {
+                $('#' + item + '').css('display', 'block');
+                $('#' + item + '_li').attr('class', 'pay-opt-tabs-active')
+            }
+        });
+
+    },
+    showdiv: function (iddiv) {
+        const array = ["name_normal", "name_vip", "reset_kda"]
+        array.forEach(function (item, index) {
+            var result = item.localeCompare(iddiv);
+            if (result != 0) {
+                $('#' + item + '').css('display', 'none');
+                $('#' + item + '_li').attr('class', '')
+            }
+            else {
+                $('#' + item + '').css('display', 'block');
+                $('#' + item + '_li').attr('class', 'pay-opt-tabs-active')
+            }
+        });
+
+    },
+    //usegiftcode: function (servicecode, characterid, charname, giftcode) {
+    //    var usegift = {}
+    //    usegift.servicecode = servicecode;
+    //    usegift.characterid = characterid;
+    //    usegift.giftcode = giftcode;
+    //    ComLibs.Confirm('Sá»­ dá»¥ng giftcode ' + giftcode + ' cho ' + charname, 'XÃ¡c nháº­n', function () {
+    //        ComLibs.HttpApi.postText(ComLibs.rootPath + '/ajaxapi/shop/giftcode', usegift, function (dataResponse) {
+    //            ComLibs.Alert(dataResponse);
+    //        });
+    //    });
+
+    //},
+    //buygempackage: function (servicecode, characterid, charname, packid, packname, newNick) {
+    //    var buygempackage = {}
+    //    buygempackage.servicecode = servicecode;
+    //    buygempackage.characterid = characterid;
+    //    buygempackage.packid = packid;
+    //    buygempackage.packname = packname;
+    //    buygempackage.newNick = newNick;
+    //    var url = ComLibs.rootPath + '/ajaxapi/shop/buypack';
+    //    ComLibs.Confirm('Báº¡n Ä‘ang thá»±c hiá»‡n mua gÃ³i ' + packname + ' cho nhÃ¢n váº­t ' + charname, 'XÃ¡c nháº­n', function () {
+    //        ComLibs.HttpApi.postText(url, buygempackage, function (dataResponse) {
+    //            ComLibs.Alert(dataResponse);
+    //            goPlayId.getBalance('#goBalace');
+    //        });
+    //    });
+    //},
+    //giftcode: function (UserId, UserName) {
+    //    var ServiceCode = "CF";
+    //    var GiftCode = $("#input_giftcode").val();
+    //    if (ComLibs.IsNullOrEmpty(GiftCode)) {
+    //        ComLibs.Alert('Giftcode khÃ´ng Ä‘Æ°á»£c Ä‘á»ƒ trá»‘ng');
+    //        return;
+    //    }
+    //    goPlayId.UseGiftcode(ServiceCode, UserId, UserName, GiftCode);
+    //},
+    //UseGiftcode: function (ServiceCode, UserId, UserName, GiftCode) {
+    //    var giftcode = {}
+    //    giftcode.ServiceCode = ServiceCode;
+    //    giftcode.UserId = UserId;
+    //    giftcode.UserName = UserName;
+    //    giftcode.GiftCode = GiftCode;
+    //    // var url = ComLibs.rootPath + '/ajaxapi/GiftCode/CheckCode';
+    //    var url = 'http://sandbox.dotkich.goplay.vn/api/ajaxapi/GiftCode/CheckCode';
+    //    ComLibs.Confirm('Báº¡n Ä‘ang sá»­ dá»¥ng Giftcode ' + GiftCode + ' cho tÃ i khoáº£n ' + UserName, 'XÃ¡c nháº­n', function () {
+    //        ComLibs.HttpApi.postJson(url, giftcode, function (dataResponse) {
+    //            ComLibs.Alert(dataResponse.message);
+    //        });
+    //    });
+    //},
+    buypackage: function (itemPrice, packid, packname) {
+        var buypackage = {}
+        buypackage.itemPrice = itemPrice;
+        buypackage.packid = packid;
+        buypackage.packname = packname;
+
+        var url = ComLibs.rootPath + '/ajaxapi/roulette/buypackage';
+        ComLibs.Confirm('Báº¡n Ä‘ang thá»±c hiá»‡n mua 5 lÆ°á»£t vá»›i giÃ¡ 50 Go', 'XÃ¡c nháº­n', function () {
+            ComLibs.HttpApi.postText(url, buypackage, function (dataResponse) {
+                ComLibs.Alert(dataResponse);
+                setTimeout(function () { location.reload(1); }, 1200);
+                //goPlayId.getBalance('#goBalace');
+            });
+        });
+    },
+    //receiveitem: function (User_ID, USN, Season_No, ItemId, Level, Ticket_Type, ItemName) {
+    //    var receiveitem = {}
+    //    receiveitem.User_ID = User_ID;
+    //    receiveitem.USN = USN;
+    //    receiveitem.Season_No = Season_No;
+    //    receiveitem.ItemId = ItemId;
+    //    receiveitem.Level = Level;
+    //    receiveitem.Ticket_Type = Ticket_Type;
+    //    var url = ComLibs.rootPath + '/ajaxapi/battlepass/receive';
+    //    var popup = document.getElementById("myPopup");
+    //    popup.classList.remove("show");
+
+    //    ComLibs.Confirm('Báº¡n cÃ³ muá»‘n nháº­n Item ' + ItemName + ' chá»©?', 'XÃ¡c nháº­n', function () {
+    //        ComLibs.HttpApi.postText(url, receiveitem, function (dataResponse) {
+    //            ComLibs.Alert(dataResponse);
+    //            setTimeout(function () { location.reload(1); }, 1200);
+    //            //goPlayId.getBalance('#goBalace');
+    //        });
+    //    });
+    //},
+    AlertGoCoin: function () {
+        //var popup = document.getElementById("myPopup");
+        //popup.classList.remove("show");
+        ComLibs.Alert("Sá»‘ GoCoin cá»§a báº¡n chÆ°a Ä‘á»§ Ä‘á»ƒ mua, xin má»i náº¡p thÃªm GoCoin...");
+    },
+    DoSpin: function (position) {
+        $("#loadhistory").empty();
+        var url = ComLibs.rootPath + '/ajaxapi/roulette/spin';
+        var dataInput = {};
+        ComLibs.HttpApi.postJson(url, dataInput, function (dataResponse) {
+            spinData = dataResponse;
+            //console.log(spinData);
+            if (spinData.IsSuccessed == false) {
+                ComLibs.ShowMessage(spinData.message);
+            }
+            else {
+                for (var i = 1; i < 13; i++) {
+                    if (position === i) {
+                        var str = "<img src='" + spinData.data.ImageUrl + "'>";
+                        str += "<h2 class='card__title'>" + spinData.data.Name + "</h2>";
+                        $("#pos-" + i).html(str);
+                        $("#posdiv-" + i).attr("style", "transform: rotateY(180deg);pointer-events: none;");
+                    }
+                    else {
+                        $("#pos-" + i + "").empty();
+                        $("#posdiv-" + i).attr("style", "transform: rotateY(0deg);pointer-events: auto;");
+                    }
+                }
+
+                $("#spincount").empty();
+                $("#spincount").html(spinData.SpinCount);
+                $("#spincounted").empty();
+                $("#spincounted").html(spinData.SpinCounted);
+
+                //ComLibs.ShowMessage(spinData.message);
+            }
+        });
+    },
+    GetHistory: function (position) {
+        var url = ComLibs.rootPath + '/history';
+        var dataInput = {};
+        ComLibs.HttpApi.getText(url, dataInput, function (dataResponse) {
+            spinData = dataResponse;
+            //console.log(spinData);
+
+            $("#loadhistory").empty();
+            $("#loadhistory").html(spinData);
+
+        });
+    }
+};

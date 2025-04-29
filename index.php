@@ -38,6 +38,7 @@ $page = isset($responseData->data->template) ? $responseData->data->template : '
 $validPages = [
     '1' => 'themes/theme1/index.php',
     "2" => 'themes/theme2/index.php',
+    "3" => 'themes/theme3/index.php',
 ];
 
 if (array_key_exists($page, $validPages) && file_exists($validPages[$page])) {

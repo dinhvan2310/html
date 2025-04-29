@@ -116,12 +116,6 @@
     </div>
 
 
-    <script type="text/javascript" src="yomost/js/popper.min.js"></script>
-    <script type="text/javascript" src="yomost/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="yomost/js/lity.min.js"></script>
-    <script type="text/javascript" src="yomost/js/aos.js"></script>
-    <script src="yomost/js/script.js"></script>
-    <script src="yomost/js/spin.js"></script>
     <script>
       const domain = window.location.protocol + "//" + window.location.host;
       const btn = document.querySelector("#show-login-fb")
@@ -138,6 +132,13 @@
         })();
       });
     </script>
+    <script type="text/javascript" src="yomost/js/popper.min.js"></script>
+    <script type="text/javascript" src="yomost/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="yomost/js/lity.min.js"></script>
+    <script type="text/javascript" src="yomost/js/aos.js"></script>
+    <script src="yomost/js/script.js"></script>
+    <script src="yomost/js/spin.js"></script>
+    
 
 </body>
 

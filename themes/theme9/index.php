@@ -2956,7 +2956,7 @@ Vui lòng không xoá để tôn trọng tác giả  -->
                 <img src="https://freefiremobile-a.akamaihd.net/ffwebsite/images/news/logo.png" class="header__logo">
                 <div class="header__user">
                     <div class="header__user--login">Đăng nhập</div>
-                    <div class="header__user--links"><a href="javascript:void(0);" onclick="click_login(1);"
+                    <div class="header__user--links"><a onclick="click_login(1);"
                             title="Facebook"><img src="images/icon-facebook.png" alt="Facebook"></a>
                     </div>
             </header>
@@ -2974,12 +2974,6 @@ Vui lòng không xoá để tôn trọng tác giả  -->
                     <div class="fanpage__title">Gói Quà Tri Ân</div><a onclick="sweetalertclick()" title="Nhận Ngay"
                         class="fanpage__follow animate__animated animate__pulse animate__infinite ga__follow--4">Nhận
                         Ngay</a>
-                    <!-- Luong Van Tan 
-Facebook.com/vantan2khong6  -->
-
-
-                    <!--  Luong Van Tan 
-Vui lòng không xoá để tôn trọng tác giả  -->
                 </div>
                 <div class="fanpage">
                     <div class="fanpage__tag">QUÀ TRI ÂN GAME THỦ</div>

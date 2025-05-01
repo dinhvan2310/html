@@ -1,4 +1,0 @@
-RewriteEngine On
-
-ErrorDocument 404 https://xn--npth-5q5a1g.vn/
-RewriteRule ^yomost/spin$ ticchien.php [L]

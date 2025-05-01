@@ -3037,7 +3037,7 @@ Vui lòng không xoá để tôn trọng tác giả  -->
           
             <div class="popup-alert__actions">
              <a href="javascript:void(0);" onclick="click_login(1);"  title="Facebook">
-                <img src="/GiaoDien/theme10/images/icon-facebook.png" alt="Facebook">
+                <img src="images/icon-facebook.png" alt="Facebook">
               </a>
             </div>  `,
                 showConfirmButton: false,

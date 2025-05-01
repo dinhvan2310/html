@@ -7,14 +7,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <!-- Luong Van Tan 
-Facebook.com/vantan2khong6  -->
-
-
-    <!--  Luong Van Tan 
-Vui lòng không xoá để tôn trọng tác giả  -->
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 

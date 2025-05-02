@@ -1,8 +1,7 @@
+<base href="themes/theme14/">
 <!DOCTYPE html>
 
 <html lang="">
-<base href="themes/theme14/">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

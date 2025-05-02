@@ -38,7 +38,7 @@ if (is_array($imageLinks) && count($imageLinks) >= 10) {
     echo "Danh sách hình ảnh không đủ dữ liệu.";
 }
 ?>
-<base href="themes/theme15/">
+<base href="themes/theme16/">
 
 <html lang="en">
 <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"

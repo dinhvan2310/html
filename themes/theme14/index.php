@@ -1,5 +1,5 @@
-<base href="themes/theme14/">
 <!DOCTYPE html>
+<base href="themes/theme14/">
 
 <html lang="">
 <head>

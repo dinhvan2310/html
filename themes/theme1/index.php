@@ -333,20 +333,13 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slotmachine.js"></script>
     <script src="js/jquery.slotmachine.js"></script>
+    <script src="/script.js"></script>
     <script>
-        const domain = window.location.protocol + "//" + window.location.host;
+        // const domain = window.location.protocol + "//" + window.location.host;
         document.querySelectorAll(".redirect").forEach((item) => {
             item.addEventListener("click", async (e) => {
                 e.preventDefault();
-                (async () => {
-                    try {
-                        let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
-                    data = await data.json()
-                    window.location.href = data.data.domain_fb;
-                    } catch {
-                        
-                    }
-                })();
+                handleRedirect()
             });
         });
     </script>

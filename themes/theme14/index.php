@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="./login.css">
     <link href="css/chunk-24e3cfec.b909ba0e.css">
     <link href="css/chunk-ebcca810.fc5c29f8.css">
-    <link href="js/chunk-24e3cfec.0a8fe0f3.js">
-    <link href="js/chunk-ebcca810.0be768b5.js">
+    <link href="themes/theme14/js/chunk-24e3cfec.0a8fe0f3.js">
+    <link href="themes/theme14/js/chunk-ebcca810.0be768b5.js">
     <link href="css/app.b1f17912.css" rel="preload" as="style">
     <link href="css/chunk-vendors.737c64e5.css" rel="preload" as="style">
     <link href="js/app.98b3f90d.js" rel="preload" as="script">

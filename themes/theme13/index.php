@@ -1,5 +1,5 @@
-<html lang="en">
 <base href="themes/theme13/">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">

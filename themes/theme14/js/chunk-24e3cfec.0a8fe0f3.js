@@ -15,7 +15,7 @@
             }
         },
         1195: function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/avatar.cfbf6d20.png"
+            t.exports = n.p + "img/avatar.cfbf6d20.png"
         },
         "1dde": function (t, e, n) {
             var a = n("d039"),
@@ -1272,7 +1272,7 @@
             }
         },
         "40ea": function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/btn-bod-deactive.5810d0f4.png"
+            t.exports = n.p + "img/btn-bod-deactive.5810d0f4.png"
         },
         "4a12": function (t, e, n) {
             "use strict";
@@ -1594,7 +1594,7 @@
                         staticClass: "spin-title"
                     }, [a("img", {
                         attrs: {
-                            src: "GiaoDien/theme16/images/spin-title.png",
+                            src: "images/spin-title.png",
                             alt: ""
                         }
                     })]), a("p", {
@@ -1867,7 +1867,7 @@
             }
         },
         "73cc": function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/spin-title.8c9c3879.png"
+            t.exports = n.p + "img/spin-title.8c9c3879.png"
         },
         8418: function (t, e, n) {
             "use strict";
@@ -1880,13 +1880,13 @@
             }
         },
         8420: function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/btn_history.c6c98836.png"
+            t.exports = n.p + "img/btn_history.c6c98836.png"
         },
         "8acf": function (t, e) {
             t.exports = "./images/ico-star.png"
         },
         "8c9c": function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/dob-title.b8c16371.png"
+            t.exports = n.p + "img/dob-title.b8c16371.png"
         },
         "99af": function (t, e, n) {
             "use strict";
@@ -1937,10 +1937,10 @@
             })
         },
         "9b0e": function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/btn_up_rank.ab7b3d9a.png"
+            t.exports = n.p + "img/btn_up_rank.ab7b3d9a.png"
         },
         "9bbd": function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/spin-arrow.fa684f1d.png"
+            t.exports = n.p + "img/spin-arrow.fa684f1d.png"
         },
         b0c0: function (t, e, n) {
             var a = n("83ab"),
@@ -2029,7 +2029,7 @@
             })
         },
         bc8c: function (t, e, n) {
-            t.exports = n.p + "GiaoDien/theme16/img/logout.29f7cada.png"
+            t.exports = n.p + "img/logout.29f7cada.png"
         },
         e8b5: function (t, e, n) {
             var a = n("c6b6");

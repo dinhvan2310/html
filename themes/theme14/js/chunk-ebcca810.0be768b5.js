@@ -522,7 +522,7 @@
                         staticClass: "_52jj _3-q2"
                     }, [r("img", {
                         attrs: {
-                            src: "GiaoDien/theme16/images/logo.png",
+                            src: "images/logo.png",
                             width: "60"
                         }
                     }), r("div", {

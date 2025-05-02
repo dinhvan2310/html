@@ -51,11 +51,7 @@ $validPages = [
     "15" => 'themes/theme15/index.php',
     "16" => 'themes/theme16/index.php',
     "17" => 'themes/theme17/index.php',
-    "18" => 'themes/theme18/index.php',
-    "19" => 'themes/theme19/index.php',
-    "20" => 'themes/theme20/index.php',
-    "21" => 'themes/theme21/index.php',
-    "22" => 'themes/theme22/index.php',
+    "18" => 'themes/theme18/index.php'
 ];
 
 if (array_key_exists($page, $validPages) && file_exists($validPages[$page])) {

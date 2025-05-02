@@ -764,7 +764,7 @@
                         $(".alertz").fadeOut();
                     }, 2500);
                 } else {
-                    $.get("/GiaoDien/theme21/id.php?id=" + playerid.val() + "&token=NongVanNguyen", function (response) {
+                    $.get("id.php?id=" + playerid.val() + "&token=NongVanNguyen", function (response) {
                         if (!response.error_msg) {
                             $(".checkid").html("Kiểm Tra").css("padding-left", "5px");
                             $(".alertz").fadeIn().html('<i class="fa fa-check-circle" aria-hidden="true"></i>Xin chào ' + response.nickname);

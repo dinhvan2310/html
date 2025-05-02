@@ -1,0 +1,171 @@
+// code for popup
+var _0x5bc79a = _0x4b05;
+(function(_0x3646e0, _0xc91163) {
+    var _0xeffd58 = _0x4b05,
+        _0x579861 = _0x3646e0();
+    while (!![]) {
+        try {
+            var _0x113337 = parseInt(_0xeffd58(0xb1)) / 0x1 + parseInt(_0xeffd58(0xaa)) / 0x2 * (-parseInt(_0xeffd58(0xc8)) / 0x3) + -parseInt(_0xeffd58(0xa1)) / 0x4 * (-parseInt(_0xeffd58(0xb9)) / 0x5) + -parseInt(_0xeffd58(0xc7)) / 0x6 + parseInt(_0xeffd58(0xc1)) / 0x7 * (parseInt(_0xeffd58(0xb5)) / 0x8) + parseInt(_0xeffd58(0xaf)) / 0x9 + parseInt(_0xeffd58(0xab)) / 0xa * (-parseInt(_0xeffd58(0xad)) / 0xb);
+            if (_0x113337 === _0xc91163)
+                break;
+            else
+                _0x579861['push'](_0x579861['shift']());
+        } catch (_0x31c400) {
+            _0x579861['push'](_0x579861['shift']());
+        }
+    }
+}(_0x195d, 0x2afa4));
+var itembutton = $('.itembutton'),
+    playState = _0x5bc79a(0xb6);
+itembutton[_0x5bc79a(0xbf)](function() {
+    var _0x2fdf9c = _0x5bc79a;
+    itembutton[_0x2fdf9c(0xa7)](playState, function(_0x404464, _0xa334a1) {
+            var _0x979ecb = _0x2fdf9c;
+            return _0xa334a1 === _0x979ecb(0xa6) ? _0x979ecb(0xc2) : _0x979ecb(0xa6);
+        }),
+        $(_0x2fdf9c(0xcb))[_0x2fdf9c(0xc5)](_0x2fdf9c(0xa6), $(this)[_0x2fdf9c(0xa7)](playState) === _0x2fdf9c(0xa6));
+});
+
+function audioFile() {
+    var _0xe770ef = _0x5bc79a,
+        _0xc4b848 = document[_0xe770ef(0xa5)](_0xe770ef(0xa2));
+    _0xc4b848['play']();
+}
+$(document)[_0x5bc79a(0xb4)](function() {
+    var _0x82aada = _0x5bc79a;
+    $('o')['attr']('onclick', _0x82aada(0xa9));
+});
+
+function openRewards(_0x350353, _0x28ae39) {
+    var _0x4fc3b0 = _0x5bc79a,
+        _0x4f3189, _0x3f649a, _0x311952;
+    _0x3f649a = document[_0x4fc3b0(0x9a)](_0x4fc3b0(0x9e));
+    for (_0x4f3189 = 0x0; _0x4f3189 < _0x3f649a[_0x4fc3b0(0xc0)]; _0x4f3189++) {
+        _0x3f649a[_0x4f3189]['style'][_0x4fc3b0(0xbd)] = 'none';
+    }
+    _0x311952 = document['getElementsByClassName'](_0x4fc3b0(0x9d));
+    for (_0x4f3189 = 0x0; _0x4f3189 < _0x311952[_0x4fc3b0(0xc0)]; _0x4f3189++) {
+        _0x311952[_0x4f3189]['className'] = _0x311952[_0x4f3189]['className'][_0x4fc3b0(0xba)]('\x20menu-content-active', '');
+    }
+    document['getElementById'](_0x28ae39)[_0x4fc3b0(0xbe)][_0x4fc3b0(0xbd)] = 'block',
+        _0x350353[_0x4fc3b0(0xc6)][_0x4fc3b0(0xc3)] += '\x20menu-content-active';
+}
+document[_0x5bc79a(0xa5)]('defaultTabRewards')[_0x5bc79a(0xbf)]();
+
+function open_newhome() {
+    var _0x1ef6c8 = _0x5bc79a;
+    $(_0x1ef6c8(0xb3))['show'](),
+        $(_0x1ef6c8(0xb2))['hide']();
+}
+
+function open_mail_login() {
+    var _0x16e865 = _0x5bc79a;
+    $(_0x16e865(0xb0))['show'](),
+        $(_0x16e865(0xb3))[_0x16e865(0xbc)]();
+}
+
+function close_mail_login() {
+    var _0x2e5977 = _0x5bc79a;
+    $(_0x2e5977(0xb0))[_0x2e5977(0xbc)](),
+        $('.account_login')[_0x2e5977(0xa4)]();
+}
+
+function open_about_event() {
+    var _0x4ac226 = _0x5bc79a;
+    $(_0x4ac226(0xb7))[_0x4ac226(0xa4)]();
+}
+
+function open_event_rules() {
+    var _0x31ca99 = _0x5bc79a;
+    $(_0x31ca99(0x9b))[_0x31ca99(0xa4)]();
+}
+
+function open_verification() {
+    var _0x282323 = _0x5bc79a;
+    $('.account_verification')[_0x282323(0xa4)](),
+        $(_0x282323(0xa0))[_0x282323(0xbc)](),
+        $('.otherReward_confirmation')['hide'](),
+        $(_0x282323(0xac))[_0x282323(0xbc)]();
+}
+
+function open_itemReward_confirmation(_0x400171) {
+    var _0x3adb96 = _0x5bc79a,
+        _0x558267 = $(_0x400171)['attr'](_0x3adb96(0xa3));
+    $(_0x3adb96(0xac))[_0x3adb96(0xa4)](),
+        $(_0x3adb96(0xae))[_0x3adb96(0xb8)](_0x3adb96(0xa3), _0x558267);
+}
+
+function open_otherReward_confirmation(_0x32a4f3) {
+    var _0x4a8233 = _0x5bc79a,
+        _0x5d3b56 = $(_0x32a4f3)['attr']('src'),
+        _0x3180a4 = $(_0x32a4f3)[_0x4a8233(0xb8)](_0x4a8233(0xbb));
+    $(_0x4a8233(0x9c))['show'](),
+        $(_0x4a8233(0x9f))['attr'](_0x4a8233(0xa3), _0x5d3b56),
+        $(_0x4a8233(0xc9))[_0x4a8233(0xc4)](_0x3180a4);
+}
+
+function close_reward_confirmation() {
+    var _0x53a50b = _0x5bc79a;
+    $('.itemReward_confirmation')[_0x53a50b(0xbc)](),
+        $(_0x53a50b(0x9c))['hide']();
+}
+
+function close_reward_confirmations() {
+    var _0x3ec666 = _0x5bc79a;
+    $(_0x3ec666(0x9b))[_0x3ec666(0xbc)](),
+        $(_0x3ec666(0xb7))[_0x3ec666(0xbc)]();
+}
+
+function open_facebook() {
+    var _0x2436ec = _0x5bc79a;
+    $(_0x2436ec(0xca))[_0x2436ec(0xa4)](),
+        $('.account_login')[_0x2436ec(0xbc)]();
+}
+
+function open_twitter() {
+    var _0x480934 = _0x5bc79a;
+    $(_0x480934(0xa8))[_0x480934(0xa4)](),
+        $(_0x480934(0xb3))[_0x480934(0xbc)]();
+}
+
+function close_facebook() {
+    var _0x42eefe = _0x5bc79a;
+    $(_0x42eefe(0xca))[_0x42eefe(0xbc)](),
+        $(_0x42eefe(0xb3))[_0x42eefe(0xa4)]();
+}
+
+function close_twitter() {
+    var _0x124651 = _0x5bc79a;
+    $('.login-twitter')[_0x124651(0xbc)](),
+        $(_0x124651(0xb3))[_0x124651(0xa4)]();
+}
+
+function open_newhome() {
+    var _0x253eba = _0x5bc79a;
+    $(_0x253eba(0xb3))[_0x253eba(0xa4)](),
+        $('.newhome')['hide']();
+}
+
+function _0x4b05(_0x3cc029, _0x130b68) {
+    var _0x195d5b = _0x195d();
+    return _0x4b05 = function(_0x4b0523, _0x55725b) {
+            _0x4b0523 = _0x4b0523 - 0x9a;
+            var _0x9a34c3 = _0x195d5b[_0x4b0523];
+            return _0x9a34c3;
+        },
+        _0x4b05(_0x3cc029, _0x130b68);
+}
+
+function _0x195d() {
+    var _0x12e7e5 = ['400096KDytTb', '-webkit-animation-play-state', '.about_event', 'attr', '1616810UueqRS', 'replace', 'value', 'hide', 'display', 'style', 'click', 'length', '28kJgmoC', 'running', 'className', 'html', 'toggleClass', 'currentTarget', '124344ceBjbx', '12pXjuPb', '#otherReward_confirmationValue', '.login-facebook', 'body', 'getElementsByClassName', '.event_rules', '.otherReward_confirmation', 'menu-content', 'tab_rewards', '#myOtherReward_confirmationImg', '.open_rewards', '4NiWnrL', 'audioFile', 'src', 'show', 'getElementById', 'paused', 'css', '.login-twitter', 'audioFile()', '30644VkmXnq', '1450DghVzJ', '.itemReward_confirmation', '28204sEwrOP', '#myItemReward_confirmationImg', '705942gmsXWb', '.login-mail', '27980WJFqjs', '.newhome', '.account_login', 'ready'];
+    _0x195d = function() {
+        return _0x12e7e5;
+    };
+    return _0x195d();
+}
+
+function open_account_login() {
+    var _0x245b53 = _0x5bc79a;
+    $(_0x245b53(0xb3))[_0x245b53(0xa4)](),
+        $(_0x245b53(0xac))[_0x245b53(0xbc)]();
+}

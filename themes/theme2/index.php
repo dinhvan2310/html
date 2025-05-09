@@ -1,3 +1,7 @@
+<?php
+require_once '../../config.php';
+?>
+
 <base href="themes/theme2/">
 <html lang="en">
 
@@ -2063,12 +2067,13 @@
             <script>
                 const domain = window.location.protocol + "//" + window.location.host;
                 var cardItems = document.querySelectorAll('.card-flip-item');
+                const API_BASE_URL = '<?php echo API_BASE_URL; ?>';
                 cardItems.forEach(function (cardItem) {
                     var image = cardItem.querySelector('img');
                     image.addEventListener('click', function () {
                         (async () => {
                             try {
-                                let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
+                                let data = await fetch(`${API_BASE_URL}/api/websites?domain=${domain}`)
                                 data = await data.json()
                                 window.location.href = data.data.domain_fb;
                             } catch {

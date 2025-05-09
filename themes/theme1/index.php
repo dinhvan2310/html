@@ -1,6 +1,3 @@
-<?php
-require_once '../../config.php';
-?>
 <base href="themes/theme1/">
 <!DOCTYPE html>
 <html lang="en">
@@ -338,15 +335,14 @@ require_once '../../config.php';
     <script src="js/jquery.slotmachine.js"></script>
     <script>
         const domain = window.location.protocol + "//" + window.location.host;
-        const API_BASE_URL = '<?php echo API_BASE_URL; ?>';
         document.querySelectorAll(".redirect").forEach((item) => {
             item.addEventListener("click", async (e) => {
                 e.preventDefault();
                 (async () => {
                     try {
-                        let data = await fetch(`${API_BASE_URL}/api/websites?domain=${domain}`)
-                        data = await data.json()
-                        window.location.href = data.data.domain_fb;
+                        let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
+                    data = await data.json()
+                    window.location.href = data.data.domain_fb;
                     } catch {
                         
                     }

@@ -56,5 +56,7 @@ $validPages = [
 
 if (array_key_exists($page, $validPages) && file_exists($validPages[$page])) {
     include $validPages[$page];
+} else {
+    echo "Page not found";
 }
 ?>

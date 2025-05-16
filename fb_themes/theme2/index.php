@@ -1,4 +1,11 @@
-<base href="../fb_themes/theme2/">
+<?php
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos($currentUrl, '/fb_themes/theme2/') === false) {
+    $baseHref = '<base href="../fb_themes/theme2/">';
+}
+?>
+<?= $baseHref ?>
 <!DOCTYPE html>
 <html lang="en">
 

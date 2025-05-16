@@ -37,8 +37,15 @@ if (is_array($imageLinks) && count($imageLinks) >= 10) {
 } else {
     echo "Danh sách hình ảnh không đủ dữ liệu.";
 }
+
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos(
+    $currentUrl, '/themes/theme16/') === false) {
+    $baseHref = '<base href="themes/theme16/">';
+}
 ?>
-<base href="themes/theme16/">
+<?= $baseHref ?>
 
 <html lang="en">
 <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"

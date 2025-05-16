@@ -1,4 +1,12 @@
-<base href="themes/theme15/">
+<?php
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos(
+    $currentUrl, '/themes/theme15/') === false) {
+    $baseHref = '<base href="themes/theme15/">';
+}
+?>
+<?= $baseHref ?>
 
 <!DOCTYPE html>
 <html>
@@ -110,12 +118,6 @@ Vui lòng không xoá nếu bạn là con người  -->
                 </div>
                 <div class="kotak"><!-- Nông Văn Nguyên
 Vui lòng không xoá nếu bạn là con người  -->
-                    <div class="imgBox">
-                        <img src="ngMedia/crate.jpg">
-                    </div>
-                    <span class="desc">Nhấn để mở</span>
-                </div>
-                <div class="kotak">
                     <div class="imgBox">
                         <img src="ngMedia/crate.jpg">
                     </div>

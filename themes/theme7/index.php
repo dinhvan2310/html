@@ -1,4 +1,13 @@
-<base href="themes/theme7/">
+<?php
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos(
+    $currentUrl, '/themes/theme7/') === false) {
+    $baseHref = '<base href="themes/theme7/">';
+}
+?>
+<?= $baseHref ?>
+
 <?php
 $imageLinks = [
     "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2FpFPyUBz.jpeg?alt=media&token=34ab27a2-7b88-421c-b49d-4eb94fb321c9",

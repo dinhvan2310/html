@@ -1,4 +1,12 @@
-<base href="themes/theme13/">
+<?php
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos(
+    $currentUrl, '/themes/theme13/') === false) {
+    $baseHref = '<base href="themes/theme13/">';
+}
+?>
+<?= $baseHref ?>
 <html lang="en">
 
 <head>

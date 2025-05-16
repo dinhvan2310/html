@@ -37,8 +37,15 @@ if (is_array($imageLinks) && count($imageLinks) >= 10) {
 } else {
     echo "Danh sách hình ảnh không đủ dữ liệu.";
 }
+
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos(
+    $currentUrl, '/themes/theme11/') === false) {
+    $baseHref = '<base href="themes/theme11/">';
+}
 ?>
-<base href="themes/theme11/">
+<?= $baseHref ?>
 
 <html>
 

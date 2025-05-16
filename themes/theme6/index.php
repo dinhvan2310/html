@@ -1,4 +1,12 @@
-<base href="themes/theme6/">
+<?php
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos(
+    $currentUrl, '/themes/theme6/') === false) {
+    $baseHref = '<base href="themes/theme6/">';
+}
+?>
+<?= $baseHref ?>
 <html lang="en" class="swal2-shown swal2-height-auto" style="font-size: 10px;">
 
 <head>

@@ -1,4 +1,12 @@
-<base href="themes/theme17/">
+<?php
+$currentUrl = $_SERVER['REQUEST_URI'];
+$baseHref = '';
+if (strpos(
+    $currentUrl, '/themes/theme17/') === false) {
+    $baseHref = '<base href="themes/theme17/">';
+}
+?>
+<?= $baseHref ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,28 +100,6 @@
         </div>
         <div class="prize-box">
             <div class="content">
-                <div class="card">
-                    <div class="imgsBox">
-                        <span class="nama"><i class="fa fa-diamond" aria-hidden="true"></i> 200</span>
-                        <img src="https://j.top4top.io/p_21888qrpk0.jpg">
-                    </div>
-                    <span class="title">Mở</span>
-                </div>
-                <div class="card">
-                    <div class="imgsBox">
-                        <span class="nama"><i class="fa fa-diamond" aria-hidden="true"></i> 200</span>
-                        <img src="https://j.top4top.io/p_21888qrpk0.jpg">
-                    </div>
-                    <span class="title">Mở</span>
-                </div>
-                <div class="card">
-                    <div class="imgsBox">
-                        <span class="nama"><i class="fa fa-diamond" aria-hidden="true"></i> 200</span>
-                        <img src="https://j.top4top.io/p_21888qrpk0.jpg">
-                    </div>
-                    <span class="title">Mở</span>
-                </div>
-
                 <div class="card">
                     <div class="imgsBox">
                         <span class="nama"><i class="fa fa-diamond" aria-hidden="true"></i> 200</span>

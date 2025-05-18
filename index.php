@@ -32,30 +32,10 @@ if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
 $response = makeGetRequest('https://minimil.onrender.com/api/websites?domain='. $current_domain);
 $responseData = json_decode($response['content']);
 
-$page = isset($responseData->data->template) ? $responseData->data->template : '';
-$validPages = [
-    '1' => 'themes/theme1/index.php',
-    "2" => 'themes/theme2/index.php',
-    "3" => 'themes/theme3/index.php',
-    "4" => 'themes/theme4/index.php',
-    "5" => 'themes/theme5/index.php',
-    "6" => 'themes/theme6/index.php',
-    "7" => 'themes/theme7/index.php',
-    "8" => 'themes/theme8/index.php',
-    "9" => 'themes/theme9/index.php',
-    "10" => 'themes/theme10/index.php',
-    "11" => 'themes/theme11/index.php',
-    "12" => 'themes/theme12/index.php',
-    "13" => 'themes/theme13/index.php',
-    "14" => 'themes/theme14/index.php',
-    "15" => 'themes/theme15/index.php',
-    "16" => 'themes/theme16/index.php',
-    "17" => 'themes/theme17/index.php',
-    "18" => 'themes/theme18/index.php'
-];
+$page = isset($responseData->data->template->path) ? $responseData->data->template->path : '';
 
-if (array_key_exists($page, $validPages) && file_exists($validPages[$page])) {
-    include $validPages[$page];
+if (file_exists($page)) {
+    include $page;
 } else {
     echo "Page not found";
 }

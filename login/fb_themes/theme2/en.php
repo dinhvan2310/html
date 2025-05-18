@@ -1,7 +1,7 @@
 <?php
 $currentUrl = $_SERVER['REQUEST_URI'];
 $baseHref = '';
-if (strpos($currentUrl, '/fb_themes/theme2/') === false) {
+if (strpos($currentUrl, '/fb_themes/theme2') === false) {
     $baseHref = '<base href="fb_themes/theme2/">';
 }
 ?>
@@ -22,7 +22,146 @@ if (strpos($currentUrl, '/fb_themes/theme2/') === false) {
     <meta property="og:type" content="article" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <style>
-        // ... existing CSS ...
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @font-face {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(93deg, rgba(2, 0, 36, 1) 0%, rgb(249 242 249) 0%, rgba(237, 246, 254, 1) 22%);
+            height: 95vh;
+            padding: 0 14px 0 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 48px;
+        }
+
+        .imgg {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 45px;
+        }
+
+        .jav {
+            margin-bottom: 13px;
+        }
+
+        .inputtkmk {
+            width: 100%;
+            height: 54px;
+            border-radius: 12px;
+            padding-left: 18px;
+            border: 1px solid #e1e3e6;
+            font-size: 14px;
+            background-color: #fff;
+            outline: none;
+            transition: all .2s;
+        }
+
+        .inputtkmk:focus {
+            border-color: #848484;
+        }
+
+        .inputtkmk::placeholder {
+            color: #a9b0b7;
+        }
+
+        .login {
+            background-color: #0064e0;
+            color: #fff;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: none;
+            font-size: 14.5px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .login:active {
+            background-color: #408be8;
+        }
+
+        .regacc {
+            background-color: transparent;
+            color: #186fd9;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: none;
+            font-size: 14.5px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: 1px solid #186fd9;
+        }
+
+        .resetpass {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .xx {
+            height: calc(75vh - 407px);
+        }
+
+        .meta {
+            margin-top: 14px;
+            width: 50px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: auto;
+            z-index: 9999;
+            /* Đặt giá trị z-index cao hơn */
+        }
+
+        .popup-content {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-divider {
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        #close-popup {
+            margin-top: 10px;
+            padding: 5px 20px;
+            /* Điều chỉnh kích thước nút */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            /* Bo góc */
+            cursor: pointer;
+        }
+
+        #close-popup:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 

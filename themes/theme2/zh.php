@@ -7,12 +7,13 @@ if (strpos(
 }
 ?>
 <?= $baseHref ?>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Fire Lucky Money Flip</title>
+    <title>Free Fire新年红包翻牌</title>
+
 
     <meta name="rating" content="general">
     <meta name="expires" content="never">
@@ -21,9 +22,9 @@ if (strpos(
     <meta name="googlebot" content="INDEX,FOLLOW,ARCHIVE">
     <meta name="robots" content="INDEX,FOLLOW,ARCHIVE">
     <meta id="pageDescription" name="description"
-        content="Vietnam's top shooting game, CrossFire can be considered the oldest shooting game in Vietnam. CrossFire is the only playground for FPS fans in Vietnam.">
-    <meta id="pageKeywords" name="keywords" content="CrossFire Game, FPS genre in Vietnam ">
-    <meta property="og:title" content="Free Fire Lucky Money Flip 2024">
+        content="越南顶级射击游戏，穿越火线可以说是越南最老的射击游戏。穿越火线是越南FPS爱好者唯一的乐园。">
+    <meta id="pageKeywords" name="keywords" content="穿越火线游戏，越南FPS类型 ">
+    <meta property="og:title" content="Free Fire新年红包翻牌2024">
     <meta property="og:image" content="images/cf_log_thum.png">
 
     <meta property="og:url" itemprop="url" content="https://dotkich.goplay.vn/lixi">
@@ -31,9 +32,9 @@ if (strpos(
         content="https://dotkich.goplay.vn/lixi/lixi/images/cf_log_thum.png">
 
     <meta
-        content="Vietnam's top shooting game. CrossFire is the only playground for FPS fans in Vietnam." itemprop="headline" property="og:title">
+        content="越南顶级射击游戏。穿越火线是越南FPS爱好者唯一的乐园。" itemprop="headline" property="og:title">
     <meta
-        content="Vietnam's top shooting game, CrossFire can be considered the oldest shooting game in Vietnam and is the only playground for FPS fans in Vietnam..." itemprop="description" property="og:description">
+        content="越南顶级射击游戏，穿越火线可以说是越南最老的射击游戏，也是越南FPS爱好者唯一的乐园..." itemprop="description" property="og:description">
     <style type="text/css">
         svg:not(:root).svg-inline--fa {
             overflow: visible
@@ -1617,7 +1618,7 @@ if (strpos(
                                 <img src="images/turn_frame_1.png" alt="" class="w-full">
                                 <div class="contents-spin-turns">
                                     <div class="contents-spin-turns__des">
-                                        <p class="">Available flips:</p>
+                                        <p class="">可用翻牌次数：</p>
                                         <span id="spincount">0</span>
                                     </div>
                                 </div>
@@ -1626,7 +1627,7 @@ if (strpos(
                                 <img src="images/turn_frame_1.png" alt="" class="w-full">
                                 <div class="contents-spin-turns">
                                     <div class="contents-spin-turns__des">
-                                        <p class="">Flips used:</p>
+                                        <p class="">已用翻牌次数：</p>
                                         <span id="spincounted">0</span>
                                     </div>
                                 </div>
@@ -1650,16 +1651,20 @@ if (strpos(
 
         .footer {
             background-color: #000;
+            /* Đặt màu nền là đen */
             color: #fff;
+            /* Đặt màu chữ là trắng */
             text-align: center;
+            /* Căn giữa nội dung */
             padding: 20px;
+            /* Đặt khoảng cách giữa nội dung và viền của footer */
         }
     </style>
 
 
 
     <div class="footer">
-        Copyright © Garena Free Fire
+        版权所有 Garena Free Fire
     </div>
 </body>
 

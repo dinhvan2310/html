@@ -1,15 +1,16 @@
 <?php
 $imageLinks = [
-    "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2FpFPyUBz.jpeg?alt=media&token=34ab27a2-7b88-421c-b49d-4eb94fb321c9",
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/pFPyUBz.jpeg",
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/2614b419ea4bdae9c70fa48015de5060.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Q3J7g8sjmmuBr70yeblxvUtiAcAPlHnwrQ&s",
-    "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2FShoz1ga.jpeg?alt=media&token=b7ffa7a3-6068-46ce-a278-0c35d1553c02",
-    "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2F3dphRVj.jpeg?alt=media&token=dda848a4-f9ab-432b-90cc-28f3bb700828",
-    "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2FaayuhgO.jpeg?alt=media&token=d3a52ae0-ed17-4cf5-bd0d-5adb5f7621e6",
-    "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2FJkE8Sq2.jpeg?alt=media&token=de87f58d-eb18-43c0-8cc8-b38465a8931e",
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/3dphRVj.jpeg",
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/aayuhgO.jpeg",
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/images.jpg",
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/JkE8Sq2.jpeg",
     "https://i.pinimg.com/236x/26/14/b4/2614b419ea4bdae9c70fa48015de5060.jpg",
     "https://i.pinimg.com/236x/26/14/b4/2614b419ea4bdae9c70fa48015de5060.jpg",
-    "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2FShoz1ga.jpeg?alt=media&token=b7ffa7a3-6068-46ce-a278-0c35d1553c02",
-    "https://firebasestorage.googleapis.com/v0/b/vocabulary-notebook-989d7.appspot.com/o/images%2FaayuhgO.jpeg?alt=media&token=d3a52ae0-ed17-4cf5-bd0d-5adb5f7621e6"
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/Shoz1ga.jpeg",
+    "https://nkckriujybohswbebyyj.supabase.co/storage/v1/object/public/main/phising/maxresdefault.jpg",
 ];
 
 // Kiểm tra xem danh sách có đủ dữ liệu không
